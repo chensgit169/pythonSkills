@@ -1,0 +1,2 @@
+class MissingOptionalLibraryError(Exception):
+    pass
