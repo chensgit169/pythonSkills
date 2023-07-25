@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # 创建一个 Path 对象
-path = Path('./path/to/file_or_directory')
+path = Path('path/to/file_or_directory')
 
 path2 = path / 'ha'
 print(path2)

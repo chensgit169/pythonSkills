@@ -13,8 +13,8 @@
 """OpenQASM parser."""
 
 import os
-import shutil
-import tempfile
+import shutil  # 内置模块，文件和目录操作的高级工具
+import tempfile  # 内置模块，用于在程序运行时创建临时文件和临时目录
 
 import numpy as np
 from ply import yacc
@@ -26,9 +26,6 @@ from .qasmlexer import QasmLexer
 
 class QasmParser:
     """OPENQASM Parser."""
-
-    # pylint: disable=missing-function-docstring,invalid-name
-
     def __init__(self, filename):
         """Create the parser."""
         if filename is None:
@@ -44,7 +41,7 @@ class QasmParser:
             ("right", "^"),
         )
         # For yacc, also, write_tables = Bool and optimize = Bool
-        self.parser = yacc.yacc(module=self, debug=False, outputdir=self.parse_dir)
+        self.parser = yacc.yacc(module=self, debug=True, outputdir=self.parse_dir)
         self.qasm = None
         self.parse_deb = False
         self.global_symtab = {}  # global symtab

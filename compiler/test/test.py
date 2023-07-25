@@ -5,4 +5,5 @@ file_path = 'examples/simple.qasm'
 with open(file_path, 'r') as qfile:
     data = qfile.read()
 
-qasm = Qasm(data)
+qasm = Qasm(data=data)
+qasm.parse()
