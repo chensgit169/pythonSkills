@@ -11,8 +11,10 @@ class GateMeta(type):
         cls = super().__new__(mcls, name, bases, attrs)  # 修复这里的代码
         return cls
 
+
 class Oracle(metaclass=GateMeta):
     pass
+
 
 # 动态生成多个类，并传入不同的gate_list参数
 gate_list1 = ['GateA', 'GateB']

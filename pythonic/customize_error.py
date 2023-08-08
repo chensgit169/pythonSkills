@@ -1,4 +1,4 @@
-# custom_error.py
+# customize_error.py
 
 # 按类继承的方式自定义异常
 class CustomValueError(ValueError):
