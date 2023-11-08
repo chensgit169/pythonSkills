@@ -10,4 +10,5 @@
 *.jpg
 *.eps
 *.log
+*.mat
 __pycache__
