@@ -21,5 +21,3 @@ plt.imshow(data, cmap='cool', interpolation='nearest')
 plt.colorbar()
 plt.xlabel('yes?')
 plt.show()
-
-

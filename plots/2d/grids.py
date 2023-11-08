@@ -6,7 +6,7 @@ x = np.linspace(-5, 5, 10)
 y = np.linspace(-5, 5, 10)
 X, Y = np.meshgrid(x, y)
 
-# 绘制3D图像
+# 绘制2D图像
 fig = plt.figure()
 ax = fig.add_subplot(aspect='equal')
 ax.plot(X, Y, '*')
