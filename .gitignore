@@ -1,0 +1,13 @@
+*.txt
+*.tif
+*.zip
+*.db
+*.xlsx
+*.DXF
+*.dxf
+*.fastq
+*.png
+*.jpg
+*.eps
+*.log
+__pycache__
