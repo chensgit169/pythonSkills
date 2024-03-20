@@ -1,16 +1,25 @@
+# files
 *.txt
-*.tif
-*.zip
-*.db
 *.xlsx
-*.DXF
-*.dxf
-*.fastq
+*.pdf
+# images
 *.png
 *.jpg
 *.eps
-*.log
+*.jepg
+# scitific formats
 *.mat
-*.pdf
+*.DXF
+*.dxf
+*.fastq
+# zipped files
+*.tif
+*.zip
+# python/system files
+*.db
+*.log
+*.npy
+
+# folders
 __pycache__
 .idea
