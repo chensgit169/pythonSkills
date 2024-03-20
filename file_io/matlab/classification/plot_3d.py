@@ -22,7 +22,7 @@ def main(num):
     order = array[0].argsort()
     array = array.T[order].T
 
-    ax3 = plt.axes(projection='3d')
+    ax3 = plt.axes(projection='3d_plots')
     # X, Y = np.meshgrid(range(dim), range(dim))
     X, Y = np.meshgrid(np.log(xs), np.log(xs))
     ax3.plot_surface(X, Y, array.T, cmap='rainbow')

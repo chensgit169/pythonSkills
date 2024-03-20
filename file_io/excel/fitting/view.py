@@ -139,7 +139,7 @@ def extract_data():
 # def fit_main():
 #     xs, s, x_beta, _, s1, s2, s3 = load_data()
 #
-#     ax3 = plt.axes(projection='3d')
+#     ax3 = plt.axes(projection='3d_plots')
 #
 #     in_range = xs > np.min(x_beta) - 1e7
 #     xs = xs[in_range]

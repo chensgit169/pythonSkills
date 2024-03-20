@@ -182,7 +182,7 @@ def abc_fit(i: int, k: float = 1., initial_params=(0.1, 0.5), vis: bool = True):
 
     # 三维绘图，拖动旋转查看
     if vis:
-        ax3 = plt.axes(projection='3d')
+        ax3 = plt.axes(projection='3d_plots')
         ax3.scatter(s / 1e5, se / 1e5, si / 1e5, c='r', marker='o', label='原始')
         ax3.scatter(s / 1e5, se / 1e5, model(result['x'], s, beta) / 1e5, c='b', marker='o', label='拟合')
 
