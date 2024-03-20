@@ -11,5 +11,6 @@
 *.eps
 *.log
 *.mat
+*.pdf
 __pycache__
 .idea
