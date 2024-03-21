@@ -10,4 +10,6 @@ These are commonly used functions from several Python scientific packages. (upda
 
 ## Pandas
 
+### Excel Handling
+
 ## SymPy
