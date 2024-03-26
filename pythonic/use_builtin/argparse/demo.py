@@ -26,6 +26,10 @@ elif args.operation == "mkdir":
 elif args.operation == "rmdir":
     # Construct the command for 'rmdir' operation
     command = "rmdir " + " ".join(args.args)
+else:
+    # Invalid operation
+    print("Invalid operation")
+    exit()
 
 # Execute the command in CMD
 os.system(command)
