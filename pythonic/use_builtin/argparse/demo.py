@@ -3,7 +3,7 @@ import os
 
 
 """
-Usage: python demo.py <operation> <args> in CMD
+Usage: python temp_file.py <operation> <args> in CMD
 """
 
 # Create an argument parser
