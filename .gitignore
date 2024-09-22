@@ -20,6 +20,11 @@
 *.log
 *.npy
 
+res.md
+
+# folder to share notes
+share
+
 # folders
 __pycache__
 .idea
