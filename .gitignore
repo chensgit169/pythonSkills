@@ -30,3 +30,4 @@ __pycache__
 .idea
 test
 backup
+imgages/*.png
