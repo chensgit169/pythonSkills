@@ -2,6 +2,32 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
 
+from PIL import Image
+
+
+def create_striped_image(image_path='image.jpg', width=200, height=100, stripe_height=10):
+    """
+    生成一张黑白条纹图片并保存为 JPG 文件。
+
+    :param image_path: str, 保存图片的文件路径
+    :param width: int, 图片的宽度（像素）
+    :param height: int, 图片的高度（像素）
+    :param stripe_height: int, 每个条纹的高度（像素）
+    """
+    # 创建一个新的白色背景图片
+    image = Image.new("RGB", (width, height), "white")
+    pixels = image.load()
+
+    # 绘制黑白条纹
+    for y in range(height):
+        color = (0, 0, 0) if (y // stripe_height) % 2 == 0 else (255, 255, 255)
+        for x in range(width):
+            pixels[x, y] = color
+
+    # 保存图片
+    image.save(image_path)
+    print(f"黑白条纹图片已保存到 {image_path}")
+
 
 def create_test_ppt(ppt_path='example.pptx'):
     # 创建一个空的PPT文件
@@ -42,5 +68,5 @@ def create_test_ppt(ppt_path='example.pptx'):
 
 
 if __name__ == '__main__':
-    # 调用函数生成测试PPT
+    create_striped_image()
     create_test_ppt()
