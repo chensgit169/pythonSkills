@@ -1,6 +1,7 @@
 # files
 *.txt
 *.xlsx
+*.pptx
 *.pdf
 # images
 *.png
@@ -30,4 +31,5 @@ __pycache__
 .idea
 test
 backup
-imgages/*.png
+**.png
+projects
