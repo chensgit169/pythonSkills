@@ -8,6 +8,7 @@
 *.jpg
 *.eps
 *.jepg
+*.mp4
 # scitific formats
 *.mat
 *.DXF

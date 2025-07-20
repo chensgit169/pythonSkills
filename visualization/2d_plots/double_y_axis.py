@@ -29,5 +29,5 @@ ax2.yaxis.label.set_color(color_list[1])
 
 # ax.legend([h1, h2], ['Trajectory', 'Field Distribution'])
 plt.tight_layout()
-# plt.show()
-plt.savefig('./figures/double_yaxis.png', bbox_inches="tight")
+plt.show()
+# plt.savefig('./figures/double_yaxis.png', bbox_inches="tight")

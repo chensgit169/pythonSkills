@@ -1,5 +1,5 @@
 # encoding=utf-8
-from PyPDF2 import PdfFileWriter, PdfFileReader
+from Py2 import PdfFileWriter, PdfFileReader
 
 
 def pdf_split(pdf_in, pdf_out, start, end):
